@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- Spam -->
+
+    <LinearLayout
+        android:id="@+id/ll_report_abuse_reason_spam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_default_view"
+        android:paddingTop="@dimen/padding_default_view" >
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_report_abuse_reason_spam"
+            style="@style/DefaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_default_view"
+            android:paddingRight="@dimen/padding_default_view"
+            android:text="@string/strSpam"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/iv_report_abuse_reason_spam_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wall_tile_more_active"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_wall_tile_more_separator" />
+
+    <!-- Personal/Hate -->
+
+    <LinearLayout
+        android:id="@+id/ll_report_abuse_reason_personal_hate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_default_view"
+        android:paddingTop="@dimen/padding_default_view" >
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_report_abuse_reason_personal_hate"
+            style="@style/DefaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_default_view"
+            android:paddingRight="@dimen/padding_default_view"
+            android:text="@string/strPersonalHate"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/iv_report_abuse_reason_personal_hate_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wall_tile_more_active"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_wall_tile_more_separator" />
+
+    <!-- Sexually Explicit -->
+
+    <LinearLayout
+        android:id="@+id/ll_report_abuse_reason_sexually_explicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_default_view"
+        android:paddingTop="@dimen/padding_default_view" >
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_report_abuse_reason_sexually_explicit"
+            style="@style/DefaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_default_view"
+            android:paddingRight="@dimen/padding_default_view"
+            android:text="@string/strSexuallyExplicit"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/iv_report_abuse_reason_sexually_explicit_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wall_tile_more_active"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_wall_tile_more_separator" />
+
+    <!-- Illegal -->
+
+    <LinearLayout
+        android:id="@+id/ll_report_abuse_reason_illegal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_default_view"
+        android:paddingTop="@dimen/padding_default_view" >
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_report_abuse_reason_illegal"
+            style="@style/DefaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_default_view"
+            android:paddingRight="@dimen/padding_default_view"
+            android:text="@string/strIllegal"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/iv_report_abuse_reason_illegal_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wall_tile_more_active"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_wall_tile_more_separator" />
+
+    <!-- Other -->
+
+    <LinearLayout
+        android:id="@+id/ll_report_abuse_reason_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_default_view"
+        android:paddingTop="@dimen/padding_default_view" >
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_report_abuse_reason_other"
+            style="@style/DefaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_default_view"
+            android:paddingRight="@dimen/padding_default_view"
+            android:text="@string/strOther"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/iv_report_abuse_reason_other_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wall_tile_more_active"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

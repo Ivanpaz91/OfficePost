@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  -->
+    <!-- Progressbar progress -->
+    <!-- <color name="color_progress">#D3D3D4</color> -->
+    <color name="color_progress">#CCCCCC</color>
+    <!--  -->
+    <color name="color_hint">#B5B5C4</color>
+    <color name="color_subtitle">#939393</color>
+    <color name="color_count">#A3A3B8</color>
+    <color name="color_default_text">#45454D</color>
+    <color name="color_status_text">#626262</color>
+    <color name="color_invite_header_text">#818080</color>
+
+    <!--  -->
+    <!-- standard -->
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#7F7F7F</color>
+    <color name="gray_light">#DDDDDD</color>
+    <color name="gray_dark">#999999</color>
+    <color name="red">#FF0000</color>
+    <color name="red_light">#FF0404</color>
+    <color name="red_dark">#BB0000</color>
+    <color name="orange">#FF5500</color>
+    <color name="orange_dark">#FF9673</color>
+    <color name="blue">#0066cc</color>
+    <color name="blue_dark">#046ac7</color>
+    <color name="green">#008834</color>
+    <color name="gold">#e6b121</color>
+    <color name="black">#000000</color>
+
+</resources>

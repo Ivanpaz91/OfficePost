@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- comments header -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_add_comment_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_comment_header"
+            android:background="@drawable/bg_header_1"
+            android:src="@null" />
+
+        <ImageView
+            android:id="@+id/iv_add_comment_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_header_delete" />
+    </RelativeLayout>
+
+    <!-- Comment Image -->
+
+    <ScrollView
+        android:id="@+id/sv_add_comment_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_add_comment_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_wall_tile"
+            android:src="@null" />
+    </ScrollView>
+
+    <!-- Comment Text -->
+
+    <com.officewall.customs.TypefaceEditText
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/edt_add_comment_text"
+        style="@style/DefaultEditText"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:hint="@string/strSaySomething"
+        android:inputType="textMultiLine"
+        android:maxLength="@integer/maxlength_default_edittext"
+        android:textSize="@dimen/font_size_comment_textview"
+        app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_wall_tile_more_separator" />
+
+    <!-- Add image and Post -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_default_view" >
+
+        <ImageView
+            android:id="@+id/iv_add_comment_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_gallery" />
+
+        <com.officewall.customs.TypefaceButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_add_comment_post"
+            style="@style/DefaultButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bmp_post_comment"
+            android:text="@string/strPost"
+            android:textColor="@color/color_default_text"
+            app:customTypeface="fonts/OpenSans-Semibold.ttf" />
+    </RelativeLayout>
+
+</LinearLayout>

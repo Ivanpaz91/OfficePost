@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- Subscribe -->
+
+    <LinearLayout
+        android:id="@+id/ll_popup_more_options_subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_default_view"
+        android:paddingTop="@dimen/padding_default_view" >
+
+        <ImageView
+            android:id="@+id/iv_popup_more_options_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wall_tile_more_subscribe" />
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_popup_more_options_subscribe"
+            style="@style/DefaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_default_view"
+            android:paddingRight="@dimen/padding_default_view"
+            android:text="@string/strSubscribe"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/iv_popup_more_options_subscribe_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wall_tile_more_active"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_wall_tile_more_separator" />
+
+    <!-- Report Abuse -->
+
+    <LinearLayout
+        android:id="@+id/ll_popup_more_options_report_abuse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_default_view"
+        android:paddingTop="@dimen/padding_default_view" >
+
+        <ImageView
+            android:id="@+id/iv_popup_more_options_report_abuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wall_tile_more_report_abuse" />
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_popup_more_options_report_abuse"
+            style="@style/DefaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_default_view"
+            android:paddingRight="@dimen/padding_default_view"
+            android:text="@string/strReportAbuse"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/iv_popup_more_options_report_abuse_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wall_tile_more_active"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_wall_tile_more_separator" />
+
+    <!-- Hide -->
+
+    <LinearLayout
+        android:id="@+id/ll_popup_more_options_hide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_default_view"
+        android:paddingTop="@dimen/padding_default_view" >
+
+        <ImageView
+            android:id="@+id/iv_popup_more_options_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wall_tile_more_visibility" />
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_popup_more_options_hide"
+            style="@style/DefaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_default_view"
+            android:paddingRight="@dimen/padding_default_view"
+            android:text="@string/strHide"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/iv_popup_more_options_hide_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wall_tile_more_active"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_progress_and_status"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Progress -->
+
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_progressbar"
+        android:progressDrawable="@drawable/bg_progressbar"
+        android:visibility="gone" />
+
+    <!-- Result status message -->
+
+    <LinearLayout
+        android:id="@+id/ll_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_wall_error"
+        android:gravity="center"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_status_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_default_view"
+            android:src="@drawable/ic_wall_error" />
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_default_view"
+            android:textColor="@color/color_status_text"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+    </LinearLayout>
+
+</RelativeLayout>

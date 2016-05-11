@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  -->
+    <!-- App level strings -->
+    <string name="strAppName">Office Wall</string>
+    <!--  -->
+    <string name="strAppLabel">officewall_android</string>
+    <string name="strAppVersion">Android 1.0</string>
+
+    <!--  -->
+    <!-- Login screen -->
+    <string name="strEmailAddress">Work email address</string>
+    <string name="strPassword">Password</string>
+    <!--  -->
+    <string name="strLogin">Login</string>
+    <!--  -->
+    <string name="strForgotPassword">Forgot Password</string>
+    <string name="strNewHereSignUp">New here? Sign up</string>
+
+    <!--  -->
+    <!-- Sign up screen -->
+    <string name="strSignUpHeader">Join your company\'s wall</string>
+    <!--  -->
+    <string name="strWordEmailAddress">Enter your work email address</string>
+    <!--  -->
+    <string name="strSignUp">Sign up</string>
+    <!--  -->
+    <string name="strAlreadyHaveAccount">Already have an account? Login here...</string>
+    <!--  -->
+    <string name="strSignUpNote">Only people with a verified company email address can join your company network.</string>
+
+    <!--  -->
+    <!-- Navigation drawer -->
+    <string name="strDrawerOpen">Open navigation drawer</string>
+    <string name="strDrawerClose">Close navigation drawer</string>
+    <!--  -->
+    <string name="strDrawerItemSignup">Sign up for another wall</string>
+    <string name="strDrawerItemNotifications">NOTIFICATIONS</string>
+    <string name="strDrawerItemHelpCenter">HELP CENTER</string>
+    <string name="strDrawerItemPrivacyShortcuts">PRIVACY SHORTCUTS</string>
+    <string name="strDrawerItemSignout">SIGN OUT</string>
+    <!--  -->
+    <string name="strDrawerLoadingWalls">Loading walls...</string>
+    <string name="strRetry">Retry</string>
+
+    <!--  -->
+    <!-- Wall screen -->
+    <string name="strSignUpForAnotherWall">Sign up for another wall</string>
+    <string name="strSignOut">Sign out</string>
+    <!--  -->
+    <string name="strSubscribe">SUBSCRIBE</string>
+    <string name="strSubscribed">SUBSCRIBED</string>
+    <string name="strReportAbuse">REPORT ABUSE</string>
+    <string name="strReportedAbuse">REPORTED ABUSE</string>
+    <string name="strHide">HIDE</string>
+    <string name="strHiden">HIDEN</string>
+    <!--  -->
+    <string name="strSpam">Spam</string>
+    <string name="strPersonalHate">Personal/Hate</string>
+    <string name="strSexuallyExplicit">Sexually Explicit</string>
+    <string name="strIllegal">Illegal</string>
+    <string name="strOther">Other</string>
+    <!--  -->
+    <string name="strReason">reason ...</string>
+    <string name="strReport">Report</string>
+
+    <!--  -->
+    <!-- Post screen -->
+    <string name="strImageCaption">Say something about this picture... (Optional)</string>
+    <string name="strPost">Post</string>
+
+    <!--  -->
+    <!-- Comment screen -->
+    <string name="strSaySomething">Say something...</string>
+
+    <!--  -->
+    <!-- Invite screen -->
+    <string name="strInactiveWallNote"><![CDATA[This wall is not active.<br>The wall will be activated once 7 additional people from _ joined.]]></string>
+    <string name="strSendInvitationNote">Send your friends _ an anonymous invitation to join this wall</string>
+    <string name="strSelectAll">Select All</string>
+    <string name="strSelectNone">Select None</string>
+    <string name="strInviteAnonymously">Invite Anonymously</string>
+    <string name="strLoadingContacts">Loading contacts...</string>
+
+    <!-- **************************************************************************************************** -->
+
+
+    <!--  -->
+    <!-- Dialog strings -->
+    <string name="strOk">Ok</string>
+    <string name="strCancel">Cancel</string>
+
+    <!-- **************************************************************************************************** -->
+
+
+    <!--  -->
+    <!-- Loading actions strings -->
+    <string name="strLoading">Loading...</string>
+    <!--  -->
+    <string name="strPullToRefresh">Pull to refresh</string>
+    <string name="strReleaseToRefresh">Release to refresh</string>
+
+    <!--  -->
+    <!-- Onscreen message strings -->
+    <string name="strMsgSuccessSignup">Registered successfully!</string>
+    <string name="strMsgSuccessLogin">Logged in successfully!</string>
+    <!--  -->
+    <string name="strMsgError">Error...!!!</string>
+    <string name="strMsgErrorNoNetwork">No Network. Check your network status and try again.</string>
+    <string name="strMsgErrorConnection">Connection Error. Please try again.</string>
+    <!--  -->
+    <string name="strMsgEnterEmail">Please enter email address</string>
+    <string name="strMsgEnterPassword">Please enter password</string>
+    <!--  -->
+    <string name="strMsgInvalidEmail">Invalid email address!</string>
+
+    <!-- *************************************************************************** -->
+
+
+    <!--  -->
+    <!-- string array -->
+
+
+    <!--  -->
+    <!-- Post color codes -->
+    <!--
+    <string-array name="arrPostColorCodes">
+        <item>7F8BAB</item>
+        <item>6069DE</item>
+        <item>28C6D8</item>
+        <item>62B649</item>
+        <item>F1B05C</item>
+        <item>E24A61</item>
+        <item>F07CB3</item>
+    </string-array>
+    -->
+    <string-array name="arrPostColorCodes">
+        <item>23BFD3</item>
+        <item>EDAD5B</item>
+        <item>28C6D8</item>
+        <item>62B649</item>
+        <item>F1B05C</item>
+        <item>E24A61</item>
+        <item>F07CB3</item>
+    </string-array>
+
+    <!--  -->
+    <!-- Post color drawables -->
+    <array name="typedArrPostColorDrawables">
+        <item>@drawable/bg_wall_tile_1</item>
+        <item>@drawable/bg_wall_tile_2</item>
+        <item>@drawable/bg_wall_tile_3</item>
+        <item>@drawable/bg_wall_tile_4</item>
+        <item>@drawable/bg_wall_tile_5</item>
+        <item>@drawable/bg_wall_tile_6</item>
+        <item>@drawable/bg_wall_tile_7</item>
+    </array>
+
+    <!--  -->
+    <!-- Comment number bg drawables -->
+    <array name="typedArrCommentNumberDrawables">
+        <item>@drawable/bg_comment_number_1</item>
+        <item>@drawable/bg_comment_number_2</item>
+        <item>@drawable/bg_comment_number_3</item>
+        <item>@drawable/bg_comment_number_4</item>
+        <item>@drawable/bg_comment_number_5</item>
+        <item>@drawable/bg_comment_number_6</item>
+        <item>@drawable/bg_comment_number_7</item>
+    </array>
+
+    <!--  -->
+    <!-- new Comment number bg drawables -->
+    <array name="typedArrNewCommentNumberDrawables">
+        <item>@drawable/bg_comment_number_1_new</item>
+        <item>@drawable/bg_comment_number_2_new</item>
+        <item>@drawable/bg_comment_number_3_new</item>
+        <item>@drawable/bg_comment_number_4_new</item>
+        <item>@drawable/bg_comment_number_5_new</item>
+        <item>@drawable/bg_comment_number_6_new</item>
+        <item>@drawable/bg_comment_number_7_new</item>
+    </array>
+
+    <!--  -->
+    <!-- Comment header drawables -->
+    <array name="typedArrCommentHeaderDrawables">
+        <item>@drawable/bg_header_1</item>
+        <item>@drawable/bg_header_2</item>
+        <item>@drawable/bg_header_3</item>
+        <item>@drawable/bg_header_4</item>
+        <item>@drawable/bg_header_5</item>
+        <item>@drawable/bg_header_6</item>
+        <item>@drawable/bg_header_7</item>
+    </array>
+
+</resources>

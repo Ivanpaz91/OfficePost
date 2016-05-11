@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- input fields -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_default_view" >
+
+        <com.officewall.customs.TypefaceEditText
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/edt_login_email"
+            style="@style/DefaultEditText"
+            android:layout_marginTop="@dimen/margin_default_view"
+            android:hint="@string/strEmailAddress"
+            android:inputType="textEmailAddress"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <com.officewall.customs.TypefaceEditText
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/edt_login_password"
+            style="@style/DefaultEditText"
+            android:layout_marginTop="@dimen/margin_default_view"
+            android:hint="@string/strPassword"
+            android:inputType="textPassword"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+    </LinearLayout>
+
+    <!-- login button -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_default_view" >
+
+        <com.officewall.customs.TypefaceButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_login_login"
+            style="@style/DefaultButton"
+            android:background="@drawable/bmp_green"
+            android:text="@string/strLogin"
+            app:customTypeface="fonts/OpenSans-Semibold.ttf" />
+    </LinearLayout>
+
+    <!-- other text fields -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_login_forgot_password"
+            style="@style/DefaultTextView"
+            android:padding="@dimen/padding_default_view"
+            android:text="@string/strForgotPassword"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_login_new_here_signup"
+            style="@style/DefaultTextView"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding_default_view"
+            android:text="@string/strNewHereSignUp"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+    </RelativeLayout>
+
+</LinearLayout>

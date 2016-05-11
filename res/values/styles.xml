@@ -1,0 +1,112 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+
+    <!-- Application theme. -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.NoActionBar" />
+
+    <style name="ThemeWall" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/WallActionBar</item>
+    </style>
+
+    <style name="WallActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/bg_wall_header</item>
+        <item name="android:icon">@android:color/transparent</item>
+    </style>
+
+    <!--  -->
+    <!-- textviews styles -->
+
+    <style name="DefaultTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_default_textview</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--  -->
+    <!-- buttons styles -->
+
+    <style name="DefaultButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_default_button</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--  -->
+    <!-- edittexts styles -->
+
+    <style name="DefaultEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/padding_default_edittext</item>
+        <item name="android:textSize">@dimen/font_size_default_edittext</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/color_hint</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:background">@drawable/bg_input_textfield</item>
+    </style>
+
+    <!--  -->
+    <!-- textviews styles -->
+
+    <style name="DefaultCheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_default_textview</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:button">@null</item>
+        <item name="android:saveEnabled">false</item>
+    </style>
+
+    <!--  -->
+    <!-- spinner styles -->
+
+    <style name="DefaultSpinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_default_textview</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!--  -->
+    <!-- listviews styles -->
+
+    <style name="DefaultListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <!--  -->
+    <!-- gridview styles -->
+
+    <style name="DefaultGridView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:stretchMode">columnWidth</item>
+    </style>
+
+</resources>

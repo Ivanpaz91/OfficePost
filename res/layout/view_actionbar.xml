@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Wall name -->
+
+    <com.officewall.customs.TypefaceTextView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tv_actionbar_wall_name"
+        style="@style/DefaultTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_default_textview"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_header_textview"
+        app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+    <!-- Post count -->
+
+    <com.officewall.customs.TypefaceTextView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tv_actionbar_post_count"
+        style="@style/DefaultTextView"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_actionbar_wall_name"
+        android:background="@drawable/bg_header_wall_count"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_actionbar_post_count_textview"
+        android:visibility="gone"
+        app:customTypeface="fonts/OpenSans-Bold.ttf" />
+
+    <!-- Add post -->
+
+    <ImageView
+        android:id="@+id/iv_actionbar_add_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bg_header_add" />
+
+</RelativeLayout>

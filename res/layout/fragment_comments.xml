@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- comments header -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_comments_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_comment_header"
+            android:background="@drawable/bg_header_1"
+            android:src="@null" />
+
+        <ImageView
+            android:id="@+id/iv_comments_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_header_delete" />
+    </RelativeLayout>
+
+    <!-- comments listview -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/padding_default_view"
+        android:paddingRight="@dimen/padding_default_view"
+        android:paddingTop="@dimen/padding_default_view" >
+
+        <com.officewall.customs.PullToRefreshListView
+            android:id="@+id/lv_comments"
+            style="@style/DefaultListView" />
+    </LinearLayout>
+
+    <!-- add comment -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_wall_tile_more_separator" />
+
+    <com.officewall.customs.TypefaceTextView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tv_comments_say_something"
+        style="@style/DefaultTextView"
+        android:layout_width="match_parent"
+        android:padding="@dimen/padding_default_view"
+        android:text="@string/strSaySomething"
+        android:textColor="@color/color_hint"
+        android:textSize="@dimen/font_size_comment_textview"
+        app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+</LinearLayout>

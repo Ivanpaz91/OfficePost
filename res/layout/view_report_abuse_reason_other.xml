@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.officewall.customs.TypefaceEditText
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/edt_report_abuse_reason_other_reason"
+        style="@style/DefaultEditText"
+        android:layout_width="wrap_content"
+        android:background="@drawable/bg_popup_reporting"
+        android:gravity="left|top"
+        android:hint="@string/strReason"
+        android:inputType="textMultiLine"
+        android:maxLength="@integer/maxlength_default_edittext"
+        android:maxLines="@integer/lines_default_edittext"
+        app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+    <com.officewall.customs.TypefaceButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btn_report_abuse_reason_other_report"
+        style="@style/DefaultButton"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/margin_default_view"
+        android:background="@drawable/bmp_report"
+        android:text="@string/strReport"
+        android:textColor="@color/color_default_text"
+        app:customTypeface="fonts/OpenSans-Semibold.ttf" />
+
+</LinearLayout>

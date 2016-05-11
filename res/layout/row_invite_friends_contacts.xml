@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_invite_friends_contact_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_nav_drawer_item" >
+
+    <CheckBox
+        android:id="@+id/cb_invite_friends_contact_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cb_invite_friends_contact_select"
+        android:button="@null"
+        android:clickable="false"
+        android:saveEnabled="false" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_default_view" >
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_invite_friends_contact_name"
+            style="@style/DefaultTextView"
+            android:textSize="@dimen/font_size_header_textview"
+            app:customTypeface="fonts/OpenSans-Bold.ttf" />
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_invite_friends_contact_email"
+            style="@style/DefaultTextView"
+            android:textColor="@color/color_subtitle"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+    </LinearLayout>
+
+</LinearLayout>

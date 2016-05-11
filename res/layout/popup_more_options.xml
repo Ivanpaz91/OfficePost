@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_wall_tile_more"
+    android:paddingLeft="@dimen/padding_default_view"
+    android:paddingRight="@dimen/padding_default_view" >
+
+    <!-- show view at first -->
+
+    <include
+        android:id="@+id/view_default_options"
+        layout="@layout/view_popup_default" />
+
+    <!-- report abuse view -->
+
+    <include
+        android:id="@+id/view_report_abuse_reason"
+        layout="@layout/view_report_abuse_reason"
+        android:visibility="gone" />
+
+    <!-- report reason other view -->
+
+    <include
+        android:id="@+id/view_report_abuse_reason_other"
+        layout="@layout/view_report_abuse_reason_other"
+        android:visibility="gone" />
+
+</RelativeLayout>

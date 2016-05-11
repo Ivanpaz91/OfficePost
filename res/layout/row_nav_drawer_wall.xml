@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_nav_drawer_wall_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_nav_drawer_item" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_nav_drawer_wall_name"
+            style="@style/DefaultTextView"
+            android:textSize="@dimen/font_size_header_textview"
+            app:customTypeface="fonts/OpenSans-Bold.ttf" />
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_nav_drawer_wall_user_email"
+            style="@style/DefaultTextView"
+            android:textColor="@color/color_subtitle"
+            app:customTypeface="fonts/OpenSans-Bold.ttf" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_nav_drawer_wall_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_side_bar_item_selected"
+        android:visibility="gone" />
+
+    <com.officewall.customs.TypefaceTextView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tv_nav_drawer_wall_post_count"
+        style="@style/DefaultTextView"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_side_bar_counter"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_nav_drawer_post_count_textview"
+        android:visibility="gone"
+        app:customTypeface="fonts/OpenSans-Bold.ttf" />
+
+</RelativeLayout>

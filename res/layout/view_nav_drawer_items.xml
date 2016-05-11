@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_nav_drawer_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Walls -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- loader view -->
+
+        <LinearLayout
+            android:id="@+id/ll_nav_drawer_item_walls_loader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_nav_drawer_item"
+            android:visibility="visible" >
+
+            <com.officewall.customs.TypefaceTextView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_nav_drawer_item_walls_loading"
+                style="@style/DefaultTextView"
+                android:padding="@dimen/padding_default_view"
+                android:text="@string/strDrawerLoadingWalls"
+                android:textColor="@color/gray"
+                app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+            <com.officewall.customs.TypefaceTextView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_nav_drawer_item_walls_retry"
+                style="@style/DefaultTextView"
+                android:padding="@dimen/padding_default_view"
+                android:text="@string/strRetry"
+                android:textColor="@color/red_light"
+                android:visibility="gone"
+                app:customTypeface="fonts/OpenSans-Regular.ttf" />
+        </LinearLayout>
+
+        <!-- Walls will be added here -->
+
+        <LinearLayout
+            android:id="@+id/ll_nav_drawer_item_walls_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- other default items -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- separator -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_side_bar_separator" />
+
+        <!-- Sign up -->
+
+        <LinearLayout
+            android:id="@+id/ll_nav_drawer_item_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_nav_drawer_item" >
+
+            <ImageView
+                android:id="@+id/iv_nav_drawer_item_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_side_bar_add" />
+
+            <com.officewall.customs.TypefaceTextView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_nav_drawer_item_sign_up"
+                style="@style/DefaultTextView"
+                android:paddingLeft="@dimen/padding_default_view"
+                android:text="@string/strDrawerItemSignup"
+                app:customTypeface="fonts/OpenSans-Regular.ttf" />
+        </LinearLayout>
+
+        <!-- separator -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_side_bar_separator"
+            android:visibility="gone" />
+
+        <!-- Notifications -->
+
+        <RelativeLayout
+            android:id="@+id/rl_nav_drawer_item_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_nav_drawer_item"
+            android:visibility="gone" >
+
+            <com.officewall.customs.TypefaceTextView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_nav_drawer_item_notifications"
+                style="@style/DefaultTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/strDrawerItemNotifications"
+                app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+            <ImageView
+                android:id="@+id/iv_nav_drawer_item_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bg_side_bar_disclosure" />
+        </RelativeLayout>
+
+        <!-- separator -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_side_bar_separator"
+            android:visibility="gone" />
+
+        <!-- Help Center -->
+
+        <RelativeLayout
+            android:id="@+id/rl_nav_drawer_item_help_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_nav_drawer_item"
+            android:visibility="gone" >
+
+            <com.officewall.customs.TypefaceTextView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_nav_drawer_item_help_center"
+                style="@style/DefaultTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/strDrawerItemHelpCenter"
+                app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+            <ImageView
+                android:id="@+id/iv_nav_drawer_item_help_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bg_side_bar_disclosure" />
+        </RelativeLayout>
+
+        <!-- separator -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_side_bar_separator"
+            android:visibility="gone" />
+
+        <!-- Privacy shortcuts -->
+
+        <RelativeLayout
+            android:id="@+id/rl_nav_drawer_item_privacy_shortcuts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_nav_drawer_item"
+            android:visibility="gone" >
+
+            <com.officewall.customs.TypefaceTextView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_nav_drawer_item_privacy_shortcuts"
+                style="@style/DefaultTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/strDrawerItemPrivacyShortcuts"
+                app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+            <ImageView
+                android:id="@+id/iv_nav_drawer_item_privacy_shortcuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bg_side_bar_disclosure" />
+        </RelativeLayout>
+
+        <!-- separator -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_side_bar_separator" />
+
+        <!-- Sign out -->
+
+        <LinearLayout
+            android:id="@+id/ll_nav_drawer_item_sign_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_nav_drawer_item" >
+
+            <com.officewall.customs.TypefaceTextView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_nav_drawer_item_sign_out"
+                style="@style/DefaultTextView"
+                android:paddingBottom="@dimen/padding_default_view"
+                android:paddingTop="@dimen/padding_default_view"
+                android:text="@string/strDrawerItemSignout"
+                android:textColor="@color/red_light"
+                app:customTypeface="fonts/OpenSans-Regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

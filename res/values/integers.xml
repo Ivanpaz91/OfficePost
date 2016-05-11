@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="lines_default_edittext">5</integer>
+    <integer name="lines_default_textview">5</integer>
+    <integer name="maxlength_default_edittext">250</integer>
+
+</resources>

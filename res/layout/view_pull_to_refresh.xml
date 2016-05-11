@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rl_ptr_id_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_default_view" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_ptr_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:rotation="-180"
+                android:src="@drawable/bg_ow_post_refresh_arrow" />
+
+            <com.officewall.customs.TypefaceTextView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_ptr_text"
+                style="@style/DefaultTextView"
+                android:padding="@dimen/padding_default_view"
+                android:textColor="@color/color_default_text"
+                app:customTypeface="fonts/OpenSans-Regular.ttf" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

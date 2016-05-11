@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/actionbar"
+        android:actionLayout="@layout/view_actionbar"
+        android:icon="@null"
+        android:showAsAction="always"/>
+
+</menu>

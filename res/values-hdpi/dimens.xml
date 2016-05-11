@@ -1,0 +1,55 @@
+<resources>
+
+    <!--  -->
+    <!-- text size -->
+    <dimen name="font_size_header_textview">18sp</dimen>
+    <dimen name="font_size_default_textview">14sp</dimen>
+    <dimen name="font_size_default_edittext">14sp</dimen>
+    <dimen name="font_size_default_button">14sp</dimen>
+    <!--  -->
+    <dimen name="font_size_actionbar_post_count_textview">11sp</dimen>
+    <dimen name="font_size_nav_drawer_post_count_textview">12sp</dimen>
+    <!--  -->
+    <dimen name="font_size_nav_drawer_textview">16sp</dimen>
+    <!--  -->
+    <dimen name="font_size_post_edittext">18sp</dimen>
+    <dimen name="font_size_post_textview">500sp</dimen>
+    <dimen name="font_size_post_count_textview">14sp</dimen>
+    <!--  -->
+    <dimen name="font_size_comment_textview">16sp</dimen>
+    <dimen name="font_size_comment_count_textview">12sp</dimen>
+    <!--  -->
+    <dimen name="font_size_invite_button">16sp</dimen>
+    <!--  -->
+
+    <!--  -->
+    <!-- view size -->
+    <dimen name="width_nav_drawer">280dp</dimen>
+    <!--  -->
+    <dimen name="width_image_thumb_2x">100dp</dimen>
+    <dimen name="height_image_thumb_2x">100dp</dimen>
+    <!--  -->
+    <dimen name="height_progressbar">4dp</dimen>
+    <dimen name="height_post_text_textview">230dp</dimen>
+    <dimen name="height_comment_header">43dp</dimen>
+
+    <!--  -->
+    <!-- view margin -->
+    <dimen name="margin_default_view">10dp</dimen>
+    <dimen name="margin_default_radiobutton">3dp</dimen>
+    <!--  -->
+    <dimen name="margin_popup_down_arrow_view">-8dp</dimen>
+
+    <!--  -->
+    <!-- view padding -->
+    <dimen name="padding_default_activity">15dp</dimen>
+    <dimen name="padding_default_view">10dp</dimen>
+    <dimen name="padding_default_edittext">8dp</dimen>
+    <dimen name="padding_default_textview">8dp</dimen>
+    <dimen name="padding_default_button">3dp</dimen>
+    <!--  -->
+    <dimen name="padding_nav_drawer_item">15dp</dimen>
+    <!--  -->
+    <dimen name="padding_row_comment">5dp</dimen>
+
+</resources>

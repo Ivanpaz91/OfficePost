@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- input fields -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_default_view" >
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_signup_join_wall"
+            style="@style/DefaultTextView"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_default_view"
+            android:text="@string/strSignUpHeader"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <com.officewall.customs.TypefaceEditText
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/edt_signup_email"
+            style="@style/DefaultEditText"
+            android:layout_marginTop="@dimen/margin_default_view"
+            android:hint="@string/strWordEmailAddress"
+            android:inputType="textEmailAddress"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+    </LinearLayout>
+
+    <!-- login button -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_default_view" >
+
+        <com.officewall.customs.TypefaceButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_signup_signup"
+            style="@style/DefaultButton"
+            android:background="@drawable/bmp_green"
+            android:text="@string/strSignUp"
+            app:customTypeface="fonts/OpenSans-Semibold.ttf" />
+    </LinearLayout>
+
+    <!-- other text fields -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_default_view" >
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_signup_already_have_account_login"
+            style="@style/DefaultTextView"
+            android:padding="@dimen/padding_default_view"
+            android:text="@string/strAlreadyHaveAccount"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+    </LinearLayout>
+
+    <!-- sign up note -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_default_view" >
+
+        <ImageView
+            android:id="@+id/iv_signup_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lock" />
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_signup_note"
+            style="@style/DefaultTextView"
+            android:paddingLeft="@dimen/padding_default_view"
+            android:text="@string/strSignUpNote"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+    </LinearLayout>
+
+</LinearLayout>

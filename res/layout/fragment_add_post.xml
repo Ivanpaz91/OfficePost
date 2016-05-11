@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Frame 1 -->
+    <!-- Image -->
+
+    <ScrollView
+        android:id="@+id/sv_add_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_add_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_wall_tile"
+                android:src="@null" />
+
+            <ImageView
+                android:id="@+id/iv_add_post_bg_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_wall_tile"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_wall_tile_1" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- Frame 2 -->
+    <!-- Image -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- Close button -->
+
+        <ImageView
+            android:id="@+id/iv_add_post_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_header_delete" />
+
+        <!-- Text -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.officewall.customs.TypefaceEditText
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/edt_add_post_text"
+                style="@style/DefaultEditText"
+                android:layout_height="@dimen/height_post_text_textview"
+                android:background="@null"
+                android:gravity="top|center_horizontal"
+                android:inputType="textMultiLine"
+                android:maxLength="@integer/maxlength_default_edittext"
+                android:padding="@dimen/padding_default_view"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@color/white"
+                android:textSize="@dimen/font_size_post_edittext"
+                app:customTypeface="fonts/OpenSans-Regular.ttf" />
+        </LinearLayout>
+
+        <!-- Add image and Post -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_default_view" >
+
+            <ImageView
+                android:id="@+id/iv_add_post_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_post_gallery_white" />
+
+            <com.officewall.customs.TypefaceButton
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btn_add_post_post"
+                style="@style/DefaultButton"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bmp_post_post"
+                android:text="@string/strPost"
+                app:customTypeface="fonts/OpenSans-Semibold.ttf" />
+        </RelativeLayout>
+
+        <!--  -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Caption text -->
+
+            <com.officewall.customs.TypefaceEditText
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/edt_add_post_caption_text"
+                style="@style/DefaultEditText"
+                android:layout_centerInParent="true"
+                android:hint="@string/strImageCaption"
+                android:maxLength="@integer/maxlength_default_edittext"
+                android:textSize="@dimen/font_size_post_edittext"
+                app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+            <!-- Color bar -->
+
+            <RadioGroup
+                android:id="@+id/rg_add_post_colorbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_add_post_round_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default_radiobutton"
+                    android:background="@drawable/rb_post_round_1"
+                    android:button="@android:color/transparent"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_add_post_round_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default_radiobutton"
+                    android:background="@drawable/rb_post_round_2"
+                    android:button="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/rb_add_post_round_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default_radiobutton"
+                    android:background="@drawable/rb_post_round_3"
+                    android:button="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/rb_add_post_round_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default_radiobutton"
+                    android:background="@drawable/rb_post_round_4"
+                    android:button="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/rb_add_post_round_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default_radiobutton"
+                    android:background="@drawable/rb_post_round_5"
+                    android:button="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/rb_add_post_round_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default_radiobutton"
+                    android:background="@drawable/rb_post_round_6"
+                    android:button="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/rb_add_post_round_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default_radiobutton"
+                    android:background="@drawable/rb_post_round_7"
+                    android:button="@android:color/transparent" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

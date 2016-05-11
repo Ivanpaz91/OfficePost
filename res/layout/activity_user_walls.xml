@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.officewall.customs.NavigationDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg" >
+
+        <!-- fragments container -->
+
+        <FrameLayout
+            android:id="@+id/fl_content_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- fragments will be added here -->
+        </FrameLayout>
+
+        <!-- Progress and status view -->
+
+        <LinearLayout
+            android:id="@+id/ll_progress_and_status_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/view_progress_and_status"
+                layout="@layout/view_progress_and_status" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- navigation drawer -->
+
+    <ScrollView
+        android:id="@+id/sv_nav_drawer"
+        android:layout_width="@dimen/width_nav_drawer"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_side_bar_row"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- drawer items -->
+
+            <include
+                android:id="@+id/view_nav_drawer_items"
+                layout="@layout/view_nav_drawer_items" />
+        </LinearLayout>
+    </ScrollView>
+
+</com.officewall.customs.NavigationDrawer>

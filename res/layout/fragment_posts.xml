@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srl_posts_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- wall posts listview -->
+
+    <com.officewall.customs.PullToRefreshListView
+        android:id="@+id/lv_posts"
+        style="@style/DefaultListView"
+        android:visibility="gone" />
+
+    <!-- invite friends view [if post count is zero] -->
+
+    <LinearLayout
+        android:id="@+id/ll_invite_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_default_view"
+        android:visibility="gone" >
+
+        <!-- notes -->
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_invite_friends_inactive_wall_note"
+            style="@style/DefaultTextView"
+            android:background="@drawable/bg_invite_friends_status"
+            android:gravity="center"
+            android:padding="@dimen/padding_default_view"
+            android:text="@string/strInactiveWallNote"
+            android:textColor="@color/color_invite_header_text"
+            android:textSize="@dimen/font_size_header_textview"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_invite_friends_send_invitation_note"
+            style="@style/DefaultTextView"
+            android:gravity="center"
+            android:padding="@dimen/padding_default_view"
+            android:text="@string/strSendInvitationNote"
+            android:textColor="@color/color_invite_header_text"
+            android:textSize="@dimen/font_size_header_textview"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <!-- contact emails list -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_default_view" >
+
+            <!-- loading contacts -->
+
+            <com.officewall.customs.TypefaceTextView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_invite_friends_loading_contacts"
+                style="@style/DefaultTextView"
+                android:text="@string/strLoadingContacts"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/font_size_header_textview"
+                android:visibility="gone"
+                app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+            <!-- contact list -->
+
+            <ListView
+                android:id="@+id/lv_invite_friends_contacts"
+                style="@style/DefaultListView"
+                android:fadeScrollbars="false"
+                android:scrollbars="vertical" />
+        </RelativeLayout>
+
+        <!-- invite -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_default_view" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <com.officewall.customs.TypefaceTextView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tv_invite_friends_select_all"
+                    style="@style/DefaultTextView"
+                    android:text="@string/strSelectAll"
+                    android:textColor="@color/color_default_text"
+                    app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+                <com.officewall.customs.TypefaceTextView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tv_invite_friends_select_none"
+                    style="@style/DefaultTextView"
+                    android:text="@string/strSelectNone"
+                    android:textColor="@color/color_default_text"
+                    app:customTypeface="fonts/OpenSans-Regular.ttf" />
+            </LinearLayout>
+
+            <com.officewall.customs.TypefaceButton
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btn_invite_friends_invite"
+                style="@style/DefaultButton"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_invite_friends_invite_anonymously"
+                android:padding="@dimen/padding_default_button"
+                android:text="@string/strInviteAnonymously"
+                android:textColor="@color/color_default_text"
+                android:textSize="@dimen/font_size_invite_button"
+                app:customTypeface="fonts/OpenSans-Semibold.ttf" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

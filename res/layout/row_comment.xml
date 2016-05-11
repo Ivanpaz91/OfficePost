@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_wall_post_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_row_comment" >
+
+    <!-- Comment number -->
+
+    <com.officewall.customs.TypefaceTextView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tv_comment_number"
+        style="@style/DefaultTextView"
+        android:background="@drawable/bg_comment_number_1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:customTypeface="fonts/OpenSans-Bold.ttf" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_row_comment" >
+
+        <!-- Image -->
+
+        <ImageView
+            android:id="@+id/iv_comment_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_wall_tile"
+            android:scaleType="fitStart"
+            android:src="@null" />
+
+        <!-- Comment text -->
+
+        <com.officewall.customs.TypefaceTextView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_comment_text"
+            style="@style/DefaultTextView"
+            android:textColor="@color/color_default_text"
+            android:textSize="@dimen/font_size_comment_textview"
+            app:customTypeface="fonts/OpenSans-Regular.ttf" />
+
+        <!-- Vote and Report -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <!-- Up vote -->
+
+            <LinearLayout
+                android:id="@+id/ll_comment_up_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_comment_up_vote_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_default_button"
+                    android:src="@drawable/ic_comment_like" />
+
+                <com.officewall.customs.TypefaceTextView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tv_comment_up_vote_count"
+                    style="@style/DefaultTextView"
+                    android:textColor="@color/color_count"
+                    android:textSize="@dimen/font_size_comment_count_textview"
+                    app:customTypeface="fonts/OpenSans-Regular.ttf" />
+            </LinearLayout>
+
+            <!-- Down vote -->
+
+            <LinearLayout
+                android:id="@+id/ll_comment_down_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_default_view" >
+
+                <ImageView
+                    android:id="@+id/iv_comment_down_vote_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_default_button"
+                    android:src="@drawable/ic_comment_dislike" />
+
+                <com.officewall.customs.TypefaceTextView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tv_comment_down_vote_count"
+                    style="@style/DefaultTextView"
+                    android:textColor="@color/color_count"
+                    android:textSize="@dimen/font_size_comment_count_textview"
+                    app:customTypeface="fonts/OpenSans-Regular.ttf" />
+            </LinearLayout>
+
+            <!-- Report -->
+
+            <LinearLayout
+                android:id="@+id/ll_comment_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_default_view" >
+
+                <ImageView
+                    android:id="@+id/iv_comment_report_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_default_view"
+                    android:src="@drawable/ic_comment_flag" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
